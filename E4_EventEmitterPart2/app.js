@@ -10,6 +10,13 @@ emtr.on(eventConfig.GREET, function() {
 emtr.on(eventConfig.GREET, function() {
 	console.log('A greeting occurred!');
 });
+emtr.on(eventConfig.FILESAVE, function(){
+	console.log('File has been saved')
+});
+emtr.on(eventConfig.FILESAVE, function(){
+	console.log('File has been saved, Again')
+})
 
 console.log('Hello!');
 emtr.emit(eventConfig.GREET);
+emtr.emit(eventConfig.FILESAVE);
